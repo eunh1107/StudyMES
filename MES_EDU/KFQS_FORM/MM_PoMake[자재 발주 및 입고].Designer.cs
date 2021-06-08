@@ -139,7 +139,7 @@ namespace KFQS_Form
             this.ultraLabel4.Size = new System.Drawing.Size(74, 23);
             this.ultraLabel4.TabIndex = 7;
             this.ultraLabel4.Text = "거래처";
-            this.ultraLabel4.Click += new System.EventHandler(this.ultraLabel4_Click);
+            //this.ultraLabel4.Click += new System.EventHandler(this.ultraLabel4_Click);
             // 
             // grid1
             // 
