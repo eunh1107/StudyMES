@@ -46,6 +46,12 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="MM_PoMake[자재 발주 및 입고].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MM_PoMake[자재 발주 및 입고].Designer.cs">
+      <DependentUpon>MM_PoMake[자재 발주 및 입고].cs</DependentUpon>
+    </Compile>
     <Compile Include="BM_WorkList.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,6 +121,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="MM_PoMake[자재 발주 및 입고].resx">
+      <DependentUpon>MM_PoMake[자재 발주 및 입고].cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BM_WorkList.resx">
       <DependentUpon>BM_WorkList.cs</DependentUpon>
     </EmbeddedResource>
