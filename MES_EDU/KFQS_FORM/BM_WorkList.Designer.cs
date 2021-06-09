@@ -99,7 +99,6 @@ namespace KFQS_Form
             this.cboPlanCode_H.Name = "cboPlanCode_H";
             this.cboPlanCode_H.Size = new System.Drawing.Size(144, 35);
             this.cboPlanCode_H.TabIndex = 0;
-            this.cboPlanCode_H.Text = "ultraComboEditor1";
             // 
             // ultraLabel1
             // 
@@ -145,7 +144,6 @@ namespace KFQS_Form
             this.cboBanCode_H.Name = "cboBanCode_H";
             this.cboBanCode_H.Size = new System.Drawing.Size(144, 35);
             this.cboBanCode_H.TabIndex = 6;
-            this.cboBanCode_H.Text = "ultraComboEditor2";
             // 
             // ultraLabel4
             // 
@@ -169,7 +167,6 @@ namespace KFQS_Form
             this.cboUseFlag_H.Name = "cboUseFlag_H";
             this.cboUseFlag_H.Size = new System.Drawing.Size(144, 35);
             this.cboUseFlag_H.TabIndex = 8;
-            this.cboUseFlag_H.Text = "ultraComboEditor3";
             // 
             // grid1
             // 
