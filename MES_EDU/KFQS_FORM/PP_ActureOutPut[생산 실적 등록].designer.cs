@@ -43,7 +43,7 @@
             Infragistics.Win.UltraWinSchedule.CalendarCombo.DateButton dateButton1 = new Infragistics.Win.UltraWinSchedule.CalendarCombo.DateButton();
             Infragistics.Win.UltraWinSchedule.CalendarCombo.DateButton dateButton2 = new Infragistics.Win.UltraWinSchedule.CalendarCombo.DateButton();
             Infragistics.Win.Appearance appearance1 = new Infragistics.Win.Appearance();
-            this.txtWokerName = new DC00_Component.Grid(this.components);
+            this.grid1 = new DC00_Component.Grid(this.components);
             this.ultraLabel5 = new Infragistics.Win.Misc.UltraLabel();
             this.ultraLabel2 = new Infragistics.Win.Misc.UltraLabel();
             this.dtpEnd = new Infragistics.Win.UltraWinSchedule.UltraCalendarCombo();
@@ -69,13 +69,13 @@
             this.ultraLabel7 = new Infragistics.Win.Misc.UltraLabel();
             this.btnWorker = new Infragistics.Win.Misc.UltraButton();
             this.ultraLabel6 = new Infragistics.Win.Misc.UltraLabel();
-            this.ultraTextEditor1 = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
+            this.txtWorkerName = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
             this.txtWokerID = new DC00_Component.SBtnTextEditor();
             ((System.ComponentModel.ISupportInitialize)(this.gbxHeader)).BeginInit();
             this.gbxHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gbxBody)).BeginInit();
             this.gbxBody.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtWokerName)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grid1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtpEnd)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtpStart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cboWorkcenterCode)).BeginInit();
@@ -88,7 +88,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtBad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtProduct)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtInLotNo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ultraTextEditor1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtWorkerName)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtWokerID)).BeginInit();
             this.SuspendLayout();
             // 
@@ -118,96 +118,97 @@
             this.gbxBody.ContentPadding.Left = 4;
             this.gbxBody.ContentPadding.Right = 4;
             this.gbxBody.ContentPadding.Top = 6;
-            this.gbxBody.Controls.Add(this.txtWokerName);
+            this.gbxBody.Controls.Add(this.grid1);
             this.gbxBody.Location = new System.Drawing.Point(3, 303);
             this.gbxBody.Size = new System.Drawing.Size(1292, 472);
             // 
-            // txtWokerName
+            // grid1
             // 
-            this.txtWokerName.AutoResizeColumn = true;
-            this.txtWokerName.AutoUserColumn = true;
-            this.txtWokerName.ContextMenuCopyEnabled = true;
-            this.txtWokerName.ContextMenuDeleteEnabled = true;
-            this.txtWokerName.ContextMenuExcelEnabled = true;
-            this.txtWokerName.ContextMenuInsertEnabled = true;
-            this.txtWokerName.ContextMenuPasteEnabled = true;
-            this.txtWokerName.DeleteButtonEnable = true;
+            this.grid1.AutoResizeColumn = true;
+            this.grid1.AutoUserColumn = true;
+            this.grid1.ContextMenuCopyEnabled = true;
+            this.grid1.ContextMenuDeleteEnabled = true;
+            this.grid1.ContextMenuExcelEnabled = true;
+            this.grid1.ContextMenuInsertEnabled = true;
+            this.grid1.ContextMenuPasteEnabled = true;
+            this.grid1.DeleteButtonEnable = true;
             appearance29.BackColor = System.Drawing.SystemColors.Window;
             appearance29.BorderColor = System.Drawing.SystemColors.InactiveCaption;
-            this.txtWokerName.DisplayLayout.Appearance = appearance29;
-            this.txtWokerName.DisplayLayout.BorderStyle = Infragistics.Win.UIElementBorderStyle.Solid;
-            this.txtWokerName.DisplayLayout.CaptionVisible = Infragistics.Win.DefaultableBoolean.False;
-            this.txtWokerName.DisplayLayout.DefaultSelectedBackColor = System.Drawing.Color.Empty;
+            this.grid1.DisplayLayout.Appearance = appearance29;
+            this.grid1.DisplayLayout.BorderStyle = Infragistics.Win.UIElementBorderStyle.Solid;
+            this.grid1.DisplayLayout.CaptionVisible = Infragistics.Win.DefaultableBoolean.False;
+            this.grid1.DisplayLayout.DefaultSelectedBackColor = System.Drawing.Color.Empty;
             appearance33.BackColor = System.Drawing.SystemColors.ActiveBorder;
             appearance33.BackColor2 = System.Drawing.SystemColors.ControlDark;
             appearance33.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
             appearance33.BorderColor = System.Drawing.SystemColors.Window;
-            this.txtWokerName.DisplayLayout.GroupByBox.Appearance = appearance33;
+            this.grid1.DisplayLayout.GroupByBox.Appearance = appearance33;
             appearance34.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.txtWokerName.DisplayLayout.GroupByBox.BandLabelAppearance = appearance34;
-            this.txtWokerName.DisplayLayout.GroupByBox.BorderStyle = Infragistics.Win.UIElementBorderStyle.Solid;
-            this.txtWokerName.DisplayLayout.GroupByBox.Hidden = true;
+            this.grid1.DisplayLayout.GroupByBox.BandLabelAppearance = appearance34;
+            this.grid1.DisplayLayout.GroupByBox.BorderStyle = Infragistics.Win.UIElementBorderStyle.Solid;
+            this.grid1.DisplayLayout.GroupByBox.Hidden = true;
             appearance35.BackColor = System.Drawing.SystemColors.ControlLightLight;
             appearance35.BackColor2 = System.Drawing.SystemColors.Control;
             appearance35.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
             appearance35.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.txtWokerName.DisplayLayout.GroupByBox.PromptAppearance = appearance35;
-            this.txtWokerName.DisplayLayout.MaxColScrollRegions = 1;
-            this.txtWokerName.DisplayLayout.MaxRowScrollRegions = 1;
+            this.grid1.DisplayLayout.GroupByBox.PromptAppearance = appearance35;
+            this.grid1.DisplayLayout.MaxColScrollRegions = 1;
+            this.grid1.DisplayLayout.MaxRowScrollRegions = 1;
             appearance36.BackColor = System.Drawing.SystemColors.Window;
             appearance36.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtWokerName.DisplayLayout.Override.ActiveCellAppearance = appearance36;
+            this.grid1.DisplayLayout.Override.ActiveCellAppearance = appearance36;
             appearance43.BackColor = System.Drawing.SystemColors.Highlight;
             appearance43.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.txtWokerName.DisplayLayout.Override.ActiveRowAppearance = appearance43;
-            this.txtWokerName.DisplayLayout.Override.AllowDelete = Infragistics.Win.DefaultableBoolean.True;
-            this.txtWokerName.DisplayLayout.Override.AllowMultiCellOperations = ((Infragistics.Win.UltraWinGrid.AllowMultiCellOperation)((((((((Infragistics.Win.UltraWinGrid.AllowMultiCellOperation.Copy | Infragistics.Win.UltraWinGrid.AllowMultiCellOperation.CopyWithHeaders) 
+            this.grid1.DisplayLayout.Override.ActiveRowAppearance = appearance43;
+            this.grid1.DisplayLayout.Override.AllowDelete = Infragistics.Win.DefaultableBoolean.True;
+            this.grid1.DisplayLayout.Override.AllowMultiCellOperations = ((Infragistics.Win.UltraWinGrid.AllowMultiCellOperation)((((((((Infragistics.Win.UltraWinGrid.AllowMultiCellOperation.Copy | Infragistics.Win.UltraWinGrid.AllowMultiCellOperation.CopyWithHeaders) 
             | Infragistics.Win.UltraWinGrid.AllowMultiCellOperation.Cut) 
             | Infragistics.Win.UltraWinGrid.AllowMultiCellOperation.Delete) 
             | Infragistics.Win.UltraWinGrid.AllowMultiCellOperation.Paste) 
             | Infragistics.Win.UltraWinGrid.AllowMultiCellOperation.Undo) 
             | Infragistics.Win.UltraWinGrid.AllowMultiCellOperation.Redo) 
             | Infragistics.Win.UltraWinGrid.AllowMultiCellOperation.Reserved)));
-            this.txtWokerName.DisplayLayout.Override.BorderStyleCell = Infragistics.Win.UIElementBorderStyle.Dotted;
-            this.txtWokerName.DisplayLayout.Override.BorderStyleRow = Infragistics.Win.UIElementBorderStyle.Dotted;
+            this.grid1.DisplayLayout.Override.BorderStyleCell = Infragistics.Win.UIElementBorderStyle.Dotted;
+            this.grid1.DisplayLayout.Override.BorderStyleRow = Infragistics.Win.UIElementBorderStyle.Dotted;
             appearance44.BackColor = System.Drawing.SystemColors.Window;
-            this.txtWokerName.DisplayLayout.Override.CardAreaAppearance = appearance44;
+            this.grid1.DisplayLayout.Override.CardAreaAppearance = appearance44;
             appearance57.BorderColor = System.Drawing.Color.Silver;
             appearance57.TextTrimming = Infragistics.Win.TextTrimming.EllipsisCharacter;
-            this.txtWokerName.DisplayLayout.Override.CellAppearance = appearance57;
-            this.txtWokerName.DisplayLayout.Override.CellClickAction = Infragistics.Win.UltraWinGrid.CellClickAction.EditAndSelectText;
-            this.txtWokerName.DisplayLayout.Override.CellPadding = 0;
+            this.grid1.DisplayLayout.Override.CellAppearance = appearance57;
+            this.grid1.DisplayLayout.Override.CellClickAction = Infragistics.Win.UltraWinGrid.CellClickAction.EditAndSelectText;
+            this.grid1.DisplayLayout.Override.CellPadding = 0;
             appearance58.BackColor = System.Drawing.SystemColors.Control;
             appearance58.BackColor2 = System.Drawing.SystemColors.ControlDark;
             appearance58.BackGradientAlignment = Infragistics.Win.GradientAlignment.Element;
             appearance58.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
             appearance58.BorderColor = System.Drawing.SystemColors.Window;
-            this.txtWokerName.DisplayLayout.Override.GroupByRowAppearance = appearance58;
-            this.txtWokerName.DisplayLayout.Override.HeaderClickAction = Infragistics.Win.UltraWinGrid.HeaderClickAction.SortMulti;
-            this.txtWokerName.DisplayLayout.Override.HeaderStyle = Infragistics.Win.HeaderStyle.WindowsXPCommand;
+            this.grid1.DisplayLayout.Override.GroupByRowAppearance = appearance58;
+            this.grid1.DisplayLayout.Override.HeaderClickAction = Infragistics.Win.UltraWinGrid.HeaderClickAction.SortMulti;
+            this.grid1.DisplayLayout.Override.HeaderStyle = Infragistics.Win.HeaderStyle.WindowsXPCommand;
             appearance59.BackColor = System.Drawing.SystemColors.Window;
             appearance59.BorderColor = System.Drawing.Color.Silver;
-            this.txtWokerName.DisplayLayout.Override.RowAppearance = appearance59;
-            this.txtWokerName.DisplayLayout.Override.RowSelectors = Infragistics.Win.DefaultableBoolean.False;
+            this.grid1.DisplayLayout.Override.RowAppearance = appearance59;
+            this.grid1.DisplayLayout.Override.RowSelectors = Infragistics.Win.DefaultableBoolean.False;
             appearance61.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.txtWokerName.DisplayLayout.Override.TemplateAddRowAppearance = appearance61;
-            this.txtWokerName.DisplayLayout.ScrollBounds = Infragistics.Win.UltraWinGrid.ScrollBounds.ScrollToFill;
-            this.txtWokerName.DisplayLayout.ScrollStyle = Infragistics.Win.UltraWinGrid.ScrollStyle.Immediate;
-            this.txtWokerName.DisplayLayout.SelectionOverlayBorderThickness = 2;
-            this.txtWokerName.DisplayLayout.ViewStyleBand = Infragistics.Win.UltraWinGrid.ViewStyleBand.OutlookGroupBy;
-            this.txtWokerName.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtWokerName.EnterNextRowEnable = true;
-            this.txtWokerName.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.txtWokerName.Location = new System.Drawing.Point(6, 6);
-            this.txtWokerName.Name = "txtWokerName";
-            this.txtWokerName.Size = new System.Drawing.Size(1280, 460);
-            this.txtWokerName.TabIndex = 6;
-            this.txtWokerName.TabStop = false;
-            this.txtWokerName.Text = "양품 수량";
-            this.txtWokerName.TextRenderingMode = Infragistics.Win.TextRenderingMode.GDI;
-            this.txtWokerName.UpdateMode = Infragistics.Win.UltraWinGrid.UpdateMode.OnCellChange;
-            this.txtWokerName.UseFlatMode = Infragistics.Win.DefaultableBoolean.True;
-            this.txtWokerName.UseOsThemes = Infragistics.Win.DefaultableBoolean.False;
+            this.grid1.DisplayLayout.Override.TemplateAddRowAppearance = appearance61;
+            this.grid1.DisplayLayout.ScrollBounds = Infragistics.Win.UltraWinGrid.ScrollBounds.ScrollToFill;
+            this.grid1.DisplayLayout.ScrollStyle = Infragistics.Win.UltraWinGrid.ScrollStyle.Immediate;
+            this.grid1.DisplayLayout.SelectionOverlayBorderThickness = 2;
+            this.grid1.DisplayLayout.ViewStyleBand = Infragistics.Win.UltraWinGrid.ViewStyleBand.OutlookGroupBy;
+            this.grid1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.grid1.EnterNextRowEnable = true;
+            this.grid1.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.grid1.Location = new System.Drawing.Point(6, 6);
+            this.grid1.Name = "grid1";
+            this.grid1.Size = new System.Drawing.Size(1280, 460);
+            this.grid1.TabIndex = 6;
+            this.grid1.TabStop = false;
+            this.grid1.Text = "양품 수량";
+            this.grid1.TextRenderingMode = Infragistics.Win.TextRenderingMode.GDI;
+            this.grid1.UpdateMode = Infragistics.Win.UltraWinGrid.UpdateMode.OnCellChange;
+            this.grid1.UseFlatMode = Infragistics.Win.DefaultableBoolean.True;
+            this.grid1.UseOsThemes = Infragistics.Win.DefaultableBoolean.False;
+            this.grid1.AfterRowActivate += new System.EventHandler(this.grid1_AfterRowActivate);
             // 
             // ultraLabel5
             // 
@@ -294,7 +295,7 @@
             this.ultraGroupBox1.Controls.Add(this.ultraLabel7);
             this.ultraGroupBox1.Controls.Add(this.btnWorker);
             this.ultraGroupBox1.Controls.Add(this.ultraLabel6);
-            this.ultraGroupBox1.Controls.Add(this.ultraTextEditor1);
+            this.ultraGroupBox1.Controls.Add(this.txtWorkerName);
             this.ultraGroupBox1.Controls.Add(this.txtWokerID);
             this.ultraGroupBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.ultraGroupBox1.Location = new System.Drawing.Point(4, 68);
@@ -337,6 +338,7 @@
             this.btnProduct.Size = new System.Drawing.Size(150, 35);
             this.btnProduct.TabIndex = 27;
             this.btnProduct.Text = "생산 실적 등록";
+            this.btnProduct.Click += new System.EventHandler(this.btnProduct_Click);
             // 
             // ultraLabel9
             // 
@@ -386,6 +388,7 @@
             this.btnLotIn.Size = new System.Drawing.Size(150, 41);
             this.btnLotIn.TabIndex = 25;
             this.btnLotIn.Text = "투입";
+            this.btnLotIn.Click += new System.EventHandler(this.btnLotIn_Click);
             // 
             // ultraLabel8
             // 
@@ -426,12 +429,12 @@
             this.ultraLabel6.TabIndex = 23;
             this.ultraLabel6.Text = "작업자";
             // 
-            // ultraTextEditor1
+            // txtWorkerName
             // 
-            this.ultraTextEditor1.Location = new System.Drawing.Point(279, 47);
-            this.ultraTextEditor1.Name = "ultraTextEditor1";
-            this.ultraTextEditor1.Size = new System.Drawing.Size(178, 35);
-            this.ultraTextEditor1.TabIndex = 23;
+            this.txtWorkerName.Location = new System.Drawing.Point(279, 47);
+            this.txtWorkerName.Name = "txtWorkerName";
+            this.txtWorkerName.Size = new System.Drawing.Size(178, 35);
+            this.txtWorkerName.TabIndex = 23;
             // 
             // txtWokerID
             // 
@@ -447,7 +450,6 @@
             this.txtWokerID.RequirePop = DC00_Component.SBtnTextEditor.RequireFlagEnum.NO;
             this.txtWokerID.Size = new System.Drawing.Size(184, 35);
             this.txtWokerID.TabIndex = 0;
-            this.txtWokerID.Text = "sBtnTextEditor1";
             // 
             // PP_ActureOutPut
             // 
@@ -461,7 +463,7 @@
             this.gbxHeader.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gbxBody)).EndInit();
             this.gbxBody.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.txtWokerName)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grid1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtpEnd)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtpStart)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cboWorkcenterCode)).EndInit();
@@ -476,14 +478,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtBad)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtProduct)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtInLotNo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ultraTextEditor1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtWorkerName)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtWokerID)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private DC00_Component.Grid txtWokerName;
+        private DC00_Component.Grid grid1;
         private Infragistics.Win.Misc.UltraLabel ultraLabel5;
         private Infragistics.Win.Misc.UltraLabel ultraLabel2;
         private Infragistics.Win.UltraWinSchedule.UltraCalendarCombo dtpEnd;
@@ -494,7 +496,7 @@
         private Infragistics.Win.UltraWinEditors.UltraComboEditor cboPlantCode_H;
         private Infragistics.Win.Misc.UltraGroupBox ultraGroupBox1;
         private Infragistics.Win.Misc.UltraLabel ultraLabel6;
-        private Infragistics.Win.UltraWinEditors.UltraTextEditor ultraTextEditor1;
+        private Infragistics.Win.UltraWinEditors.UltraTextEditor txtWorkerName;
         private DC00_Component.SBtnTextEditor txtWokerID;
         private Infragistics.Win.Misc.UltraLabel ultraLabel3;
         private Infragistics.Win.UltraWinEditors.UltraTextEditor txtOderNo;
