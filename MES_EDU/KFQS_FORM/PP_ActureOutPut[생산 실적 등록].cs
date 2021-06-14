@@ -471,6 +471,54 @@ namespace KFQS_Form
             }
 
         }
+
+        private void btnOrderClose_Click(object sender, EventArgs e)
+        {
+            // 작업지시 종료
+            if (grid1.Rows.Count == 0) return;
+            if (grid1.ActiveRow == null) return;
+            if(Convert.ToString(grid1.ActiveRow.Cells["MATLOTNO"].Value) != "")
+            {
+                ShowDialog("LOT 투입 취소 후 진행하세요.", DC00_WinForm.DialogForm.DialogType.OK);
+                return;
+            }
+            // 가동일 경우 동료 안되도록 확인
+            if(Convert.ToString(grid1.ActiveRow.Cells["WORKSTATUSCODE"].Value) != "S")
+            {
+                ShowDialog("비가동 등록 후 진행하세요.", DC00_WinForm.DialogForm.DialogType.OK);
+                return;
+            }
+            DBHelper helper = new DBHelper("", true);
+            try
+            {
+                helper.ExecuteNoneQuery("07PP_ActureOutput_U3", CommandType.StoredProcedure
+                                                                    , helper.CreateParameter("PLANTCODE", plantCode, DbType.String, ParameterDirection.Input)
+                                                                    , helper.CreateParameter("WORKCENTERCODE", Convert.ToString(this.grid1.ActiveRow.Cells["WORKCENTERCODE"].Value), DbType.String, ParameterDirection.Input)
+                                                                    , helper.CreateParameter("ORDERNO", Convert.ToString(this.grid1.ActiveRow.Cells["ORDERNO"].Value), DbType.String, ParameterDirection.Input)
+                                                                    );
+                if (helper.RSCODE != "S")
+                {
+                    helper.Rollback();
+                    ShowDialog(helper.RSMSG);
+                    return;
+                }
+                helper.Commit();
+                ShowDialog("상태 등록을 완료 하였습니다.", DialogForm.DialogType.OK);
+                DoInquire();
+                txtInLotNo.Text = "";
+                txtProduct.Text = "";
+                txtBad.Text = "";
+            }
+            catch(Exception ex)
+            {
+                helper.Rollback();
+                ShowDialog(ex.ToString(), DC00_WinForm.DialogForm.DialogType.OK);
+            }
+            finally
+            {
+                helper.Close();
+            }
+        }
     }
 }
 

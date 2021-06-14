@@ -40,8 +40,8 @@
             Infragistics.Win.Appearance appearance58 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance59 = new Infragistics.Win.Appearance();
             Infragistics.Win.Appearance appearance61 = new Infragistics.Win.Appearance();
-            Infragistics.Win.UltraWinSchedule.CalendarCombo.DateButton dateButton1 = new Infragistics.Win.UltraWinSchedule.CalendarCombo.DateButton();
-            Infragistics.Win.UltraWinSchedule.CalendarCombo.DateButton dateButton2 = new Infragistics.Win.UltraWinSchedule.CalendarCombo.DateButton();
+            Infragistics.Win.UltraWinSchedule.CalendarCombo.DateButton dateButton5 = new Infragistics.Win.UltraWinSchedule.CalendarCombo.DateButton();
+            Infragistics.Win.UltraWinSchedule.CalendarCombo.DateButton dateButton6 = new Infragistics.Win.UltraWinSchedule.CalendarCombo.DateButton();
             Infragistics.Win.Appearance appearance1 = new Infragistics.Win.Appearance();
             this.grid1 = new DC00_Component.Grid(this.components);
             this.ultraLabel5 = new Infragistics.Win.Misc.UltraLabel();
@@ -228,7 +228,7 @@
             // 
             // dtpEnd
             // 
-            this.dtpEnd.DateButtons.Add(dateButton1);
+            this.dtpEnd.DateButtons.Add(dateButton5);
             this.dtpEnd.Location = new System.Drawing.Point(743, 19);
             this.dtpEnd.Name = "dtpEnd";
             this.dtpEnd.NonAutoSizeHeight = 32;
@@ -237,7 +237,7 @@
             // 
             // dtpStart
             // 
-            this.dtpStart.DateButtons.Add(dateButton2);
+            this.dtpStart.DateButtons.Add(dateButton6);
             this.dtpStart.Location = new System.Drawing.Point(575, 18);
             this.dtpStart.Name = "dtpStart";
             this.dtpStart.NonAutoSizeHeight = 32;
@@ -329,7 +329,8 @@
             this.btnOrderClose.Name = "btnOrderClose";
             this.btnOrderClose.Size = new System.Drawing.Size(150, 35);
             this.btnOrderClose.TabIndex = 28;
-            this.btnOrderClose.Text = "작업 지시 등록";
+            this.btnOrderClose.Text = "작업 지시 종료";
+            this.btnOrderClose.Click += new System.EventHandler(this.btnOrderClose_Click);
             // 
             // btnProduct
             // 
