@@ -222,6 +222,7 @@ namespace KFQS_Form
                 {
                     helper.Commit();
                     ShowDialog("정상적으로 등록 되었습니다.", DC00_WinForm.DialogForm.DialogType.OK);
+                    DoInquire();
                 }
                 else
                 {
@@ -335,6 +336,7 @@ namespace KFQS_Form
                 {
                     helper.Commit();
                     ShowDialog(helper.RSMSG, DC00_WinForm.DialogForm.DialogType.OK);
+                    DoInquire();
                 }
                 else
                 {
@@ -518,6 +520,21 @@ namespace KFQS_Form
             {
                 helper.Close();
             }
+        }
+
+        private void txtWokerID_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnWorker_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtWorkerName_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

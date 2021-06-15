@@ -421,6 +421,7 @@
             this.btnWorker.Size = new System.Drawing.Size(150, 41);
             this.btnWorker.TabIndex = 24;
             this.btnWorker.Text = "작업자 등록";
+            this.btnWorker.Click += new System.EventHandler(this.btnWorker_Click_1);
             // 
             // ultraLabel6
             // 
@@ -436,6 +437,7 @@
             this.txtWorkerName.Name = "txtWorkerName";
             this.txtWorkerName.Size = new System.Drawing.Size(178, 35);
             this.txtWorkerName.TabIndex = 23;
+            this.txtWorkerName.ValueChanged += new System.EventHandler(this.txtWorkerName_ValueChanged);
             // 
             // txtWokerID
             // 
@@ -451,6 +453,7 @@
             this.txtWokerID.RequirePop = DC00_Component.SBtnTextEditor.RequireFlagEnum.NO;
             this.txtWokerID.Size = new System.Drawing.Size(184, 35);
             this.txtWokerID.TabIndex = 0;
+            this.txtWokerID.ValueChanged += new System.EventHandler(this.txtWokerID_ValueChanged);
             // 
             // PP_ActureOutPut
             // 
