@@ -3,8 +3,8 @@
 //   Form ID      : PP_WorkerPerProd_M
 //   Form Name    : 자재 재고관리 
 //   Name Space   : KFQS_Form
-//   Created Date : 2020/08
-//   Made By      : DSH
+//   Created Date : 2021/06
+//   Made By      : kEH
 //   Description  : 
 // *---------------------------------------------------------------------------------------------*
 #endregion
@@ -122,7 +122,7 @@ namespace KFQS_Form
                 string sStartDate  = string.Format("{0:yyyy-MM-dd}", dtStartDate.Value);
                 string sEndDate    = string.Format("{0:yyyy-MM-dd}", dtEnddate.Value);
 
-                rtnDtTemp = helper.FillTable("00PP_WorkerPerProd_S1", CommandType.StoredProcedure
+                rtnDtTemp = helper.FillTable("07PP_WorkerPerProd_S1", CommandType.StoredProcedure
                                     , helper.CreateParameter("PLANTCODE",  sPlantCode,  DbType.String, ParameterDirection.Input)
                                     , helper.CreateParameter("WORKER",     sWorker,     DbType.String, ParameterDirection.Input)
                                     , helper.CreateParameter("STARTDATE",  sStartDate,  DbType.String, ParameterDirection.Input)

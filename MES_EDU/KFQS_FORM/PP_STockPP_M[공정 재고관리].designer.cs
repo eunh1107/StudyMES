@@ -234,6 +234,7 @@
             this.ultraButton1.Size = new System.Drawing.Size(152, 44);
             this.ultraButton1.TabIndex = 188;
             this.ultraButton1.Text = "LOT 발행";
+            this.ultraButton1.Click += new System.EventHandler(this.ultraButton1_Click);
             // 
             // cboItemType
             // 

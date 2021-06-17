@@ -46,6 +46,24 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="PP_ActureOutPut[생산 실적등록].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP_ActureOutPut[생산 실적등록].designer.cs">
+      <DependentUpon>PP_ActureOutPut[생산 실적등록].cs</DependentUpon>
+    </Compile>
+    <Compile Include="WM_StockOutWM[제품 출고 처리].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WM_StockOutWM[제품 출고 처리].designer.cs">
+      <DependentUpon>WM_StockOutWM[제품 출고 처리].cs</DependentUpon>
+    </Compile>
+    <Compile Include="WM_ProdinStock[제품 창고 입고].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WM_ProdinStock[제품 창고 입고].designer.cs">
+      <DependentUpon>WM_ProdinStock[제품 창고 입고].cs</DependentUpon>
+    </Compile>
     <Compile Include="PP_STockHALB_M[재공 재고조회].cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,23 +76,17 @@
     <Compile Include="PP_WCTRunStopList_M[작업장 비가동 현황 및 사유관리].designer.cs">
       <DependentUpon>PP_WCTRunStopList_M[작업장 비가동 현황 및 사유관리].cs</DependentUpon>
     </Compile>
-    <Compile Include="PP_ActureOutPut[생산 실적 등록].cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PP_ActureOutPut[생산 실적 등록].designer.cs">
-      <DependentUpon>PP_ActureOutPut[생산 실적 등록].cs</DependentUpon>
-    </Compile>
     <Compile Include="MM_PoMake[자재 발주 및 입고].cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MM_PoMake[자재 발주 및 입고].Designer.cs">
       <DependentUpon>MM_PoMake[자재 발주 및 입고].cs</DependentUpon>
     </Compile>
-    <Compile Include="BM_WorkList.cs">
+    <Compile Include="BM_WorkList[작업자 마스터].cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="BM_WorkList.Designer.cs">
-      <DependentUpon>BM_WorkList.cs</DependentUpon>
+      <DependentUpon>BM_WorkList[작업자 마스터].cs</DependentUpon>
     </Compile>
     <Compile Include="AP_ProductPlan[생산 계획 및 확정].cs">
       <SubType>Form</SubType>
@@ -111,6 +123,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="WM_StockWM_M[제품재고 관리 및 상차 등록].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WM_StockWM_M[제품재고 관리 및 상차 등록].designer.cs">
+      <DependentUpon>WM_StockWM_M[제품재고 관리 및 상차 등록].cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -169,20 +187,26 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="PP_ActureOutPut[생산 실적등록].resx">
+      <DependentUpon>PP_ActureOutPut[생산 실적등록].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WM_StockOutWM[제품 출고 처리].resx">
+      <DependentUpon>WM_StockOutWM[제품 출고 처리].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WM_ProdinStock[제품 창고 입고].resx">
+      <DependentUpon>WM_ProdinStock[제품 창고 입고].cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PP_STockHALB_M[재공 재고조회].resx">
       <DependentUpon>PP_STockHALB_M[재공 재고조회].cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PP_WCTRunStopList_M[작업장 비가동 현황 및 사유관리].resx">
       <DependentUpon>PP_WCTRunStopList_M[작업장 비가동 현황 및 사유관리].cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PP_ActureOutPut[생산 실적 등록].resx">
-      <DependentUpon>PP_ActureOutPut[생산 실적 등록].cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="MM_PoMake[자재 발주 및 입고].resx">
       <DependentUpon>MM_PoMake[자재 발주 및 입고].cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BM_WorkList.resx">
-      <DependentUpon>BM_WorkList.cs</DependentUpon>
+      <DependentUpon>BM_WorkList[작업자 마스터].cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AP_ProductPlan[생산 계획 및 확정].resx">
       <DependentUpon>AP_ProductPlan[생산 계획 및 확정].cs</DependentUpon>
@@ -204,6 +228,9 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WM_StockWM_M[제품재고 관리 및 상차 등록].resx">
+      <DependentUpon>WM_StockWM_M[제품재고 관리 및 상차 등록].cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

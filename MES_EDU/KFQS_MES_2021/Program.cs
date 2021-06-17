@@ -132,7 +132,7 @@ namespace KFQS_MES_2021
             assembly = Assembly.LoadFrom(Application.StartupPath + @"\" + appconfig.AppSettings.Settings["STARTFORMFILE"].Value.ToString());
             typeForm = assembly.GetType(appconfig.AppSettings.Settings["STARTFORM"].Value.ToString(), true);
             newForm = (Form)Activator.CreateInstance(typeForm, args);
-            Application.Run(newForm);
+           Application.Run(newForm);
         }
     }
 }
