@@ -43,7 +43,7 @@ namespace KFQS_Form
             _GridUtil.InitColumnUltraGrid(grid1, "PLANQTY",        "계획수량",     true, GridColDataType_emu.Double,     100, 120, Infragistics.Win.HAlign.Right,  true, false);
             _GridUtil.InitColumnUltraGrid(grid1, "UNITCODE",       "단위",         true, GridColDataType_emu.VarChar,    100, 120, Infragistics.Win.HAlign.Left,   true, false);
             _GridUtil.InitColumnUltraGrid(grid1, "WORKCENTERCODE", "작업장",       true, GridColDataType_emu.VarChar,    200, 120, Infragistics.Win.HAlign.Left,   true, false);
-            _GridUtil.InitColumnUltraGrid(grid1, "CHK",            "확정",         true, GridColDataType_emu.CheckBox,   100, 120, Infragistics.Win.HAlign.Center, true, true);
+            _GridUtil.InitColumnUltraGrid(grid1, "CHK",            "확정",         true, GridColDataType_emu.CheckBox,   100, 120, Infragistics.Win.HAlign.Center, true, true); 
             _GridUtil.InitColumnUltraGrid(grid1, "ORDERNO",        "작업지시번호", true, GridColDataType_emu.VarChar,    100, 120, Infragistics.Win.HAlign.Left,   true, false);
             _GridUtil.InitColumnUltraGrid(grid1, "ORDERDATE",      "확정일시",     true, GridColDataType_emu.DateTime24, 120, 120, Infragistics.Win.HAlign.Left,   true, false);
             _GridUtil.InitColumnUltraGrid(grid1, "ORDERWORKER",    "확정자",       true, GridColDataType_emu.VarChar,    120, 120, Infragistics.Win.HAlign.Left,   true, false);
