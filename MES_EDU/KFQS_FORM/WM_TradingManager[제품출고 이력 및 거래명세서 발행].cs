@@ -171,7 +171,7 @@ namespace KFQS_Form
                 }
                 else
                 {
-                    
+                    _GridUtil.Grid_Clear(grid2);
                 }
             }
             catch (Exception ex)
@@ -205,6 +205,14 @@ namespace KFQS_Form
                                                              , helper.CreateParameter("PLANTCODE", sPlantCode, DbType.String, ParameterDirection.Input)
                                                              , helper.CreateParameter("TRADINGNO", sTradingNo, DbType.String, ParameterDirection.Input)
                                                              );
+                if (rtnDtTemp.Rows.Count == 0) return;
+                Report_BanChul report                   = new Report_BanChul();
+                Telerik.Reporting.ReportBook reportBook = new Telerik.Reporting.ReportBook();
+                report.DataSource = rtnDtTemp;
+                reportBook.Reports.Add(report);
+
+                ReportViewer reportViewer = new ReportViewer(reportBook);
+                reportViewer.ShowDialog();
             }
             catch(Exception ex)
             {
@@ -213,9 +221,7 @@ namespace KFQS_Form
             finally
             {
                 helper.Close();
-            }
-
-            
+            }            
         }
     }
 }
