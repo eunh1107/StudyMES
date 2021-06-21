@@ -76,15 +76,16 @@ namespace KFQS_Form
             rtnDtTemp = _Common.Standard_CODE("UNITCODE");     //단위
             UltraGridUtil.SetComboUltraGrid(this.grid1, "UNITCODE", rtnDtTemp, "CODE_ID", "CODE_NAME");
 
-            rtnDtTemp = _Common.Standard_CODE("WHCODE");     //입고 창고
-            UltraGridUtil.SetComboUltraGrid(this.grid1, "WHCODE", rtnDtTemp, "CODE_ID", "CODE_NAME");
+            rtnDtTemp = _Common.Standard_CODE("BADTYPE");     //불량사유
+            Common.FillComboboxMaster(this.cboBadType, rtnDtTemp, rtnDtTemp.Columns["CODE_ID"].ColumnName, rtnDtTemp.Columns["CODE_NAME"].ColumnName, "ALL", "");
+            UltraGridUtil.SetComboUltraGrid(this.grid1, "BADTYPE", rtnDtTemp, "CODE_ID", "CODE_NAME");
 
-            rtnDtTemp = _Common.Standard_CODE("YESNO");     //상차 여부
+           // rtnDtTemp = _Common.Standard_CODE("YESNO");     //상차 여부
             //Common.FillComboboxMaster(this.cboShipFlag, rtnDtTemp, rtnDtTemp.Columns["CODE_ID"].ColumnName, rtnDtTemp.Columns["CODE_NAME"].ColumnName, "ALL", "");
             UltraGridUtil.SetComboUltraGrid(this.grid1, "SHIPFLAG", rtnDtTemp, "CODE_ID", "CODE_NAME");
             #endregion
 
-            #region ▶ POP-UP ◀
+            #region ▶ POP-UP ◀B
             BizTextBoxManager btbManager = new BizTextBoxManager();
            // btbManager.PopUpAdd(txtWorker_H, txtWorkerName_H, "WORKER_MASTER", new object[] { "", "", "", "", "" });
            // btbManager.PopUpAdd(txtCustCode_H, txtCustName_H, "CUST_MASTER", new object[] { cboPlantCode_H, "", "", "" });
