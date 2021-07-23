@@ -46,6 +46,12 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="AP_ProductOrder[작업지시 관리 및 생산 현황].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AP_ProductOrder[작업지시 관리 및 생산 현황].designer.cs">
+      <DependentUpon>AP_ProductOrder[작업지시 관리 및 생산 현황].cs</DependentUpon>
+    </Compile>
     <Compile Include="AP_ProductPlan_N[생산계획 편성].cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +93,12 @@
     </Compile>
     <Compile Include="MM_StockMMRec[원자재 입출 이력].designer.cs">
       <DependentUpon>MM_StockMMRec[원자재 입출 이력].cs</DependentUpon>
+    </Compile>
+    <Compile Include="PP_ActureOutPut_N[생산 실적 등록%282차%29].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PP_ActureOutPut_N[생산 실적 등록%282차%29].Designer.cs">
+      <DependentUpon>PP_ActureOutPut_N[생산 실적 등록%282차%29].cs</DependentUpon>
     </Compile>
     <Compile Include="PP_ActureOutPut[생산 실적 등록].cs">
       <SubType>Form</SubType>
@@ -301,6 +313,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AP_ProductOrder[작업지시 관리 및 생산 현황].resx">
+      <DependentUpon>AP_ProductOrder[작업지시 관리 및 생산 현황].cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AP_ProductPlan_N[생산계획 편성].resx">
       <DependentUpon>AP_ProductPlan_N[생산계획 편성].cs</DependentUpon>
     </EmbeddedResource>
@@ -321,6 +336,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MM_StockMMRec[원자재 입출 이력].resx">
       <DependentUpon>MM_StockMMRec[원자재 입출 이력].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PP_ActureOutPut_N[생산 실적 등록%282차%29].resx">
+      <DependentUpon>PP_ActureOutPut_N[생산 실적 등록%282차%29].cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PP_ActureOutPut[생산 실적 등록].resx">
       <DependentUpon>PP_ActureOutPut[생산 실적 등록].cs</DependentUpon>
